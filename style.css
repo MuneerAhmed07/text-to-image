@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.main_container {
+    width: 60%;
+    padding: 40px;
+    /* background: red; */
+}
+
+/* CSS For  Header */
+.header {
+    width: 100%;
+    text-align: center;
+    /* background: green; */
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.inputBox {
+    width: 80%;
+    height: 55px;
+    background-color: white;
+    margin: auto;
+    border-radius: 50px;
+    overflow: hidden;
+    border: 1px solid #fff;
+    padding: 0;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 10px 50px;
+}
+
+.inputBox input {
+    width: 73%;
+    height: 100%;
+    background: none;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.inputBox button {
+    width: 23%;
+    background-color: blue;
+    color: #fff;
+    border-radius: 40px;
+    height: 100%;
+    border: 1px solid #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Image Container */
+
+.image-container {
+    background: white;
+    width: 50%;
+    margin: auto;
+    margin-top: 40px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.image-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+/* For Button */
+
+.button_section {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.button_section .btn {
+    padding: 8px 32px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    outline: none;
+    border: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* For Mobile View */
+
+@media screen and (max-width: 768px){
+    .main_container {
+        width: 100%;
+        padding: 40px 10px;
+    }
+    .header {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    h1 {
+        font-size: 25px;
+    }
+    
+    .inputBox  {
+        height: 50px;
+        width: 100%;
+    }
+    
+    .inputBox input {
+        width: 65%;
+    }
+
+    .inputBox button {
+        width: 30%;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+}
